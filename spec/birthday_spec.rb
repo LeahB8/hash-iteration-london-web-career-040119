@@ -8,14 +8,14 @@ describe "#happy_birthday" do
       "Amanda" => 27
     }
 
-    expect{happy_birthday(birthday_kids)}.to output("Happy Birthday Timmy! You are now 9 years old!\nHappy Birthday Sarah! You are now 6 years old!\nHappy Birthday Amanda! You are now 27 years old!\n").to_stdout
+ expect{happy_birthday(birthday_kids)}.to output("Happy Birthday Timmy! You are now 9 years old!\nHappy Birthday Sarah! You are now 6 years old!\nHappy Birthday Amanda! You are now 27 years old!\n").to_stdout
 
   end
 end
 
 ## BONUS ##
-describe "#age_appropriate_birthday" do
-  pending it "only prints the birthday greeting if the birthday kid 12 or younger" do
+ describe "#age_appropriate_birthday" do
+   it "only prints the birthday greeting if the birthday kid 12 or younger" do
     birthday_kids = {
       "Timmy" => 9,
       "Sarah" => 6,
